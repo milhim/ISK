@@ -1,0 +1,189 @@
+* {
+      box-sizing: border-box;
+      font-family: "Montserrat", Arial, verdana, sans-serif;
+      font-size: 18px;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+}
+
+/*--------top styling-------*/
+.nav .top {
+      background-color: #212733;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      height: 70px;
+}
+
+.nav .top>div {
+      color: white;
+      align-self: center;
+      display: flex;
+      justify-content: space-around;
+      padding: 25px;
+}
+
+.nav .top>div>i {
+      font-size: 30px;
+      padding: 20px;
+}
+
+.nav .top>div>p {
+      display: inline;
+}
+
+.nav .top>div>p>span {
+      display: block;
+      font-size: 14px;
+}
+
+.nav .top div:last-child button {
+      height: 40px;
+      width: 160px;
+      margin-top: 15px;
+      background-color: #c5c2c2;
+      color: #212733;
+      font-weight: bold;
+      border-radius: 10px;
+      border: 0px;
+      cursor: pointer;
+      transition: all 0.3s;
+}
+
+.nav .top div:last-child button:hover {
+      background-color: #314071;
+      color: #dad8d8;
+}
+
+/*-----end top styling------*/
+/*-----nav links and logo style-----*/
+.nav .nav-bar {
+      width: 80%;
+      margin: 10px auto;
+}
+
+.nav .nav-bar .logo-class {
+      float: left;
+      width: 100px;
+      height: 100px;
+
+}
+
+.nav .nav-bar .logo-class img {
+      width: 100%;
+}
+
+.nav .nav-bar .nav-links {
+      float: right;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 25px;
+      width: 730px;
+}
+
+.nav .nav-bar .nav-links a {
+      text-decoration: none;
+      color: #5D5D5D;
+      font-size: 15px;
+      font-weight: bold;
+      transition: color 0.5s;
+      padding: 10px;
+}
+
+.nav .nav-bar .nav-links a:hover {
+      color: #212733;
+}
+
+.nav .nav-bar .nav-links a:first-child {
+      color: #212733;
+}
+
+.nav .nav-bar .nav-links a:last-child {
+      background-color: #212733;
+      color: #a3a2a2;
+      border-radius: 20px;
+      transition: all 0.2s;
+}
+
+.nav .nav-bar .nav-links a:last-child:hover {
+      background-color: #CEC7BD;
+      color: #212733;
+}
+
+.nav .nav-bar .nav-btn {
+      display: none;
+}
+
+#nav-check {
+      display: none;
+}
+
+@media (max-width:600px) {
+      .nav .top {
+            display: block;
+      }
+
+      .nav .top>div {
+            display: none;
+      }
+
+      .nav .top>div:last-child {
+            display: block;
+            padding: 0;
+            text-align: center;
+      }
+
+      .nav .nav-bar .nav-btn {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 100px;
+      }
+
+      .nav .nav-bar .nav-btn label {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 15px;
+      }
+
+      .nav .nav-bar .nav-btn label span {
+            display: block;
+            width: 25px;
+            height: 10px;
+            border-top: 2px solid #212733;
+      }
+
+      .nav .nav-bar .nav-links {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0px;
+            transition: all 0.3s;
+            top: 150px;
+            left: 0px;
+            overflow: hidden;
+            background-color: #eee;
+      }
+
+      .nav .nav-bar .nav-links a {
+            display: block;
+            width: 100%;
+            color: #212733;
+            text-align: center;
+
+      }
+
+      #nav-check:not(:checked)~.nav-links {
+            height: 0px;
+      }
+      #nav-check:checked~.nav-links {
+            height: 200px;
+            overflow-y: auto;
+      }
+
+}
+
