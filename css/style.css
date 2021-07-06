@@ -44,7 +44,7 @@ body {
       height: 40px;
       width: 160px;
       margin-top: 15px;
-      background-color: #c5c2c2;
+      background-color: #f1f1f1;
       color: #212733;
       font-weight: bold;
       border-radius: 10px;
@@ -54,8 +54,8 @@ body {
 }
 
 .nav .top div:last-child button:hover {
-      background-color: #314071;
-      color: #dad8d8;
+      background-color: #03225f;
+      color: #f1f1f1;
 }
 
 /*-----end top styling------*/
@@ -120,8 +120,103 @@ body {
 #nav-check {
       display: none;
 }
+/*-----end nav style-----*/
+
+/*-----start first section styling-----*/
+      /*-----top section-----*/
+      .first-section{
+            margin: 150px auto;
+            background-image: url('../image/section1.jpg');
+            background-size: 100% 100%;
+            height: 700px;
+      }
+      .first-section .top{
+            display: inline-block;
+            margin: 30px 75px;
+            width: 50%;
+      }
+      .first-section .top h1{
+            color: #212733;
+            font-size: 42px;
+            font-weight: 700;
+      }
+      .first-section .top p{
+            font-size: 17px;
+            color: #4C4B4B;
+            line-height: 1.5;
+      }
+      .first-section .top p span{
+            font-size: 18px;
+            color: #4C4B4B;
+            font-weight: bold;
+      }
+      .first-section .top a{
+            display: block;
+            width: 170px;
+            font-size: 18px;
+            word-spacing: 2px;
+            text-decoration: none;
+            color: #f1f1f1;
+            border: 1px black solid;
+            border-radius: 8px;
+            background-color: #212733;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            transition: all 0.4s;
+      }
+      .first-section .top a:hover{
+            text-decoration: underline;
+            background-color: #010332;
+      }
+            /*----- end top section-----*/
+
+            /*-----bottom section-----*/
+
+      .second-section{
+            margin: -200px 25px 50px 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+      }
+      .second-section>div{
+            display: inline-block;
+            background-color: #212733;
+            border: 0.5px #010332 solid;
+            border-radius: 5px;
+            width: 27%;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 5px;
+      }
+      .second-section>div .icon{
+            background-color: #010332;
+            border-radius: 100px;
+            width: 75px;
+            height: 75px;
+            margin: -35px auto 30px auto;
+      }
+      .second-section>div .icon i{
+            font-size: 26px;
+            display: inline-block;
+            margin-top: 22px;   
+      }
+      .second-section>div h3{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+      }
+      .second-section>div p{
+            line-height: 1.8;
+            font-size: 14px;
+            width: 80%;
+            margin: auto auto 10px auto;
+      }
+
+
 
 @media (max-width:600px) {
+      /*-----nav bar-----*/
       .nav .top {
             display: block;
       }
@@ -183,6 +278,54 @@ body {
       #nav-check:checked~.nav-links {
             height: 200px;
             overflow-y: auto;
+      }
+      /*-----first section-----*/
+      .first-section{
+            background-size: 600px 100%;
+
+      }
+      .first-section .top{
+            display: inline-block;
+            margin: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+
+      }
+      .first-section .top h1{
+            color: #3d485f;
+            font-size: 28px;
+            font-weight: 600;
+      }
+      .first-section .top p{
+            font-size: 16px;
+            color: #323e57;
+      }
+      .first-section .top p span{
+            font-size: 18px;
+            color: #27437a;
+      }
+      .first-section .top a{
+            font-size: 16px;
+            word-spacing: 1px;
+            margin: 20px auto;
+      }
+      /*-------------------*/
+      .second-section{
+            flex-direction: column;
+            align-items: center;
+      }
+      .second-section>div{
+            width: 100%;
+            margin-bottom: 50px;
+      }
+      .second-section>div h3{
+            font-size: 18px;
+      }
+      .second-section>div p{
+            font-size: 14px;
+            width: 90%;
+            margin-bottom: 20px;
       }
 
 }
